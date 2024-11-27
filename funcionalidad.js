@@ -160,19 +160,12 @@ if (changeViewButton) {
             event.stopPropagation();
             this.addToCart(product);
           });
-
-          const verCaracteristicas = productContent.querySelector('.ver-caracteristicas');
-          addToCartButton.addEventListener('click', (event) => {
-            event.stopPropagation();
-            this.addToCart(product);
-          });
     
           productLink.addEventListener('click', (event) => {
             event.preventDefault();
             this.showProductDetails(product.id);
           });
     
-          
           productContainer.appendChild(productContent);
         });
       }
@@ -500,8 +493,4 @@ document.getElementById('sort-rating').addEventListener('click', () => {
   container.innerHTML = '';
   products.forEach(product => container.appendChild(product));
 });
-
-
-
-
 

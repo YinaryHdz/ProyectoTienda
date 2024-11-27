@@ -677,6 +677,59 @@ product-details ul li strong {
   display: block;
 }
 
+
+
+
+/* Estilos para las tarjetas de productos */
+.product-card {
+  position: relative;
+  width: 200px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  background-color: #fff;
+}
+
+.product-card h3 {
+  font-size: 18px;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Estilo para el botón de ver características */
+.ver-caracteristicas {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.product-card {
+  position: relative;
+}
+
+.features-list {
+  list-style: none;
+  padding-left: 0;
+}
+
   
 
 
