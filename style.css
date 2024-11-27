@@ -601,6 +601,85 @@ product-details ul li strong {
 
 
 
+/* Estilos generales del menú */
+.menuPrecio-container {
+  position: relative;
+}
+
+/* Botón del menú */
+.menuPrecio-button {
+  background-color: #9e9e9e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Menú principal */
+.menuPrecio {
+  display: none; 
+  position: absolute;
+  top: 50px; /* Posición debajo del botón */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+  z-index: 1000;
+}
+
+/* Menú visible cuando el contenedor tiene el foco */
+.menuPrecio-container:focus-within .menuPrecio {
+  display: block;
+}
+
+/* Elementos de la lista del menú */
+.menuPrecio li {
+  position: relative;
+}
+
+/* Enlaces del menú */
+.menuPrecio a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.menuPrecio a:hover {
+  background-color: #f0f0f0; /* Color al pasar el ratón */
+}
+
+/* Submenús */
+.submenu {
+  display: none; /* Inicialmente oculto */
+  position: absolute;
+  top: 0;
+  left: 100%; /* A la derecha del menú principal */
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  border-radius: 5px;
+}
+
+/* Mostrar submenú al hacer clic en el enlace */
+.menuPrecio li:focus-within > .submenu,
+.menuPrecio li:hover > .submenu {
+  display: block;
+}
+
+  
+
+
 
 
 
